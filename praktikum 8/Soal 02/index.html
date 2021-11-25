@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jerry Livano 2172002">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt("Bilangan yang ingin di cek:"));
+        let sisanol = 0;
+        for (i=1; i<=input; i++){
+            if (input%i==0){
+                sisanol++;
+            }
+        }
+        if (sisanol==2){
+            document.write("Bilangan " + input + " adalah bilangan prima");
+        }
+        else {
+            document.write("Bilangan " + input + " bukan bilangan prima");
+        }
+    </script>
+</body>
+</html>

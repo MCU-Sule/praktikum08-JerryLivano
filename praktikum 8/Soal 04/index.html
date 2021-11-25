@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jerry Livano 2172002">
+    <title>Document</title>
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0">
+        <script>
+            let baris = parseInt(prompt("Jumlah baris:"));
+            let kolom = parseInt(prompt("Jumlah kolom:"));
+            let warnaa = (prompt("Warna 1 (hexadecimal):"));
+            let warnab = (prompt("Warna 2 (hexadecimal):"));
+            for (i=1; i<=baris; i++){
+                document.write("<tr>");
+                for (j=1; j<=kolom; j++){
+                    let total = i + j;
+                    if (total%2==0){
+                        document.write("<td width='60px' height='15px' bgcolor='#" + warnaa + "'>" + i*j + "</td>");
+                    }
+                    else {
+                        document.write("<td width='60px' height='15px' bgcolor='#" + warnab + "'>" + i*j + "</td>"); 
+                    }
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

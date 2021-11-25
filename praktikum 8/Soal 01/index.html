@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jerry Livano 2172002">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt("Bilangan inputan:"));
+        let hasil = 1
+        for (i=input; i>0; i--){
+            hasil = hasil*i;
+        }
+        if (input==0){
+            document.write("Hasil dari " + input + "! adalah 1");
+        }
+        else if (input<0){
+            document.write("Hasil dari " + input + "! adalah undefined");
+        }
+        else {
+            document.write("Hasil dari " + input + "! adalah " + hasil);
+        }
+    </script>
+</body>
+</html>

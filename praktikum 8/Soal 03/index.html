@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jerry Livano 2172002">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <script>
+        let input = parseInt(prompt("besar angka :"));
+        let baris = input - 1;
+        for (i=1; i<=baris; i++){
+            for (j=1; j<=i; j++){
+                document.write("<div style='width: " + 100/i + "%; background-color: rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + ");'>" + j + "</div>"); 
+            }
+        } 
+    </script>
+</body>
+</html>
